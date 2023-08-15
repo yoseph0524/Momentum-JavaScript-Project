@@ -1,28 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Vanilla Challenge</title>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <title>Document</title>
   </head>
-
   <body>
-    <h1>Random Number Game</h1>
-    <div id="h2">
-      <h2>Generate a number between 0 and</h2>
-      <form id="form">
-        <input type="number" min="0" />
-      </form>
-    </div>
-    <div id="h4">
-      <h4>Guess the number:</h4>
-      <form>
-        <input type="number" />
-        <button>Play!</button>
-      </form>
-    </div>
-    <h4 id="chose" class="hidden"></h4>
-    <h4 id="won" class="hidden"></h4>
+    <form class="hidden" id="login-form">
+      <input
+        required
+        maxlength="15"
+        type="text"
+        placeholder="What is your name?"
+      />
+      <button>Log In</button>
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+    <h2 id="clock">00</h2>
+
     <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
   </body>
 </html>
