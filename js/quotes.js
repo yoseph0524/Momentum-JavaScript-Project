@@ -38,10 +38,13 @@ const quotes = [
     {
         quote: "The only thing we have to fear is fear itself.",
         author: "Franklin D. Roosevelt",
-    },
+    }
 ]
 
 const quote = document.querySelector("#quote span:first-child");
 const author = document.querySelector("#quote span:last-child");
 
-console.log(quotes[0]);
+const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
+
+quote.innerText = todaysQuote.quote;
+author.innerText = todaysQuote.author;
