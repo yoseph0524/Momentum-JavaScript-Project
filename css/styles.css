@@ -1,7 +1,87 @@
+
+
+img {
+    position:absolute;
+    width:100vw;
+    height: 100vw;
+    top:0;
+    z-index: -1;
+}
+
+#clock {
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+#clock1,
+#clock2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#clock2 {
+    font-size: 20px;
+}
+
+
+#quote {
+    position:absolute;
+    bottom:0;
+    width:100vw;
+    margin-bottom: 30px;
+}
+
+#quote span {
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+
+#weather span {
+    color: white;
+}
+
+
+.login-css{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .hidden {
     display: none;
 }
 
+#greeting {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    color: white;
+}
+#todo-form {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
 
+#todo-list {
+    color:white;
+}
 
-
+#todo-list li {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+button {
+    margin-left: 5px;
+    background-color: red;
+}
