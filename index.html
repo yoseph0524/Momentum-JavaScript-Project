@@ -13,32 +13,44 @@
     </div>
     <form class="hidden login-css" id="login-form">
       <input
+        id="login-input"
         required
         maxlength="15"
         type="text"
         placeholder="What is your name?"
       />
-      <button>Log In</button>
+      <button id="login-button">Log In</button>
     </form>
 
     <h1 id="greeting" class="hidden"></h1>
+    <div id="logout_div">
+      <button id="logout" class="hidden">Log Out</button>
+    </div>
+    <div id="todo-div">
+      <form id="todo-form">
+        <input
+          id="todo-input"
+          type="text"
+          required
+          placeholder="Write a To Do and Press Enter"
+        />
+      </form>
 
-    <form id="todo-form">
-      <input type="text" required placeholder="Write a To Do and Press Enter" />
-    </form>
-    <ul id="todo-list"></ul>
+      <ul id="todo-list"></ul>
+    </div>
     <div id="quote">
       <span></span>
       <span></span>
     </div>
     <div id="weather">
-      <span>c</span>
-      <span>d</span>
+      <span>Weather</span>
+      <span>Description</span>
     </div>
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/backgound.js"></script>
     <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
   </body>
 </html>

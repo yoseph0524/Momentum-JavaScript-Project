@@ -8,11 +8,11 @@ function onGeoOK(position) {
     fetch(url)
         .then((response) => response.json())
         .then((data) => {
-            const weather = document.getElementById("#weather span:first-child");
-            const city = document.getElementById("#weather span:last-child");
-            city.innerText= data.name;
-            weather.innerText = `${data.weather[0].main} and ${data.main.temp} fahrenheit degrees`;
-        })
+            const city = document.querySelector("#weather span:first-child");
+            const weather = document.querySelector("#weather span:last-child");
+            city.innerText = `${data.name}, ${data.sys.country}`;
+            weather.innerText = `${data.weather[0].description},  ${data.main.temp}\u00B0F`;
+        });
 }
 
 function onGeoError() {
